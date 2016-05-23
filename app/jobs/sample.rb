@@ -1,5 +1,60 @@
 current_valuation = 0
 
+per_capita_gdp = [
+  {x:1963, y: 2367},
+  {x:1964, y: 2571},
+  {x:1965, y: 2849},
+  {x:1966, y: 3110},
+  {x:1967, y: 3307},
+  {x:1968, y: 3722},
+  {x:1969, y: 4262},
+  {x:1970, y: 4813},
+  {x:1971, y: 5188},
+  {x:1972, y: 5624},
+  {x:1973, y: 6353},
+  {x:1974, y: 7143},
+  {x:1975, y: 8173},
+  {x:1976, y: 8526},
+  {x:1977, y: 9441},
+  {x:1978, y: 10508},
+  {x:1979, y: 11869},
+  {x:1980, y: 13380},
+  {x:1981, y: 14640},
+  {x:1982, y: 15740},
+  {x:1983, y: 17260},
+  {x:1984, y: 19132},
+  {x:1985, y: 20722},
+  {x:1986, y: 22437},
+  {x:1987, y: 24273},
+  {x:1988, y: 26799},
+  {x:1989, y: 29427},
+  {x:1990, y: 32534},
+  {x:1991, y: 34357},
+  {x:1992, y: 36129},
+  {x:1993, y: 36732},
+  {x:1994, y: 37395},
+  {x:1995, y: 37763},
+  {x:1996, y: 38125},
+  {x:1997, y: 39064},
+  {x:1998, y: 37627},
+  {x:1999, y: 39177},
+  {x:2000, y: 41247},
+  {x:2001, y: 42789},
+  {x:2002, y: 45185},
+  {x:2003, y: 48559},
+  {x:2004, y: 53306},
+  {x:2005, y: 58123},
+  {x:2006, y: 61684},
+  {x:2007, y: 64967},
+  {x:2008, y: 66728},
+  {x:2009, y: 65275},
+  {x:2010, y: 67740},
+  {x:2011, y: 70058},
+  {x:2012, y: 72653},
+  {x:2013, y: 75095},
+  {x:2014, y: 77379}
+]
+
 data = [
   { "x" => 1940, "y" => 14.7 },
   { "x" => 1941, "y" => 15.5 }, 
@@ -83,6 +138,20 @@ pie_data = [
   { label: "Testing", value: 34 },
 ]
 
+graphite = [
+  {
+    target: "stats_counts.http.ok",
+    datapoints: [[10, 1378449600], [40, 1378452000], [53, 1378454400], [63, 1378456800], [27, 1378459200]]
+  },
+  {
+    target: "stats_counts.http.err",
+    datapoints: [[0, 1378449600], [4, 1378452000], [nil, 1378454400], [3, 1378456800], [0, 1378459200]]
+  }
+]
+
+# points = [{x:1, y: 4}, {x:2, y:27}, {x:3, y:6}]
+
+
 SCHEDULER = Dashing.scheduler
 
 Dashing.scheduler.every '2s' do
@@ -91,8 +160,10 @@ Dashing.scheduler.every '2s' do
 
   Dashing.send_event('valuation', { current: current_valuation, last: last_valuation })
   Dashing.send_event('synergy',   { value: rand(100) })
-  Dashing.send_event('cpi',   { value: rand(100) })
-  Dashing.send_event('buzzwords', { value: "whatever"})
-  Dashing.send_event('cpi', {points: data})
-  Dashing.send_event('bookmarks_frequency', {value: pie_data})
 end
+
+Dashing.send_event('buzzwords', { value: "whatever"})
+Dashing.send_event('cpi', {points: data})
+Dashing.send_event('bookmarks_frequency', {value: pie_data})
+Dashing.send_event('rickshawgraph', {points: points})
+Dashing.send_event('rickshawgraph-line', {points: per_capita_gdp})

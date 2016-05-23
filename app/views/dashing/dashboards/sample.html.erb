@@ -2,7 +2,7 @@
     E komo mai!  Public data dashboard for Hawaii
 <% end %>
 
-<script src="http://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS_KEY'] %>&sensor=false&libraries=visualization"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=6386263&sensor=false&libraries=visualization"></script>
 
 <div class="gridster">
     <ul>
@@ -11,24 +11,32 @@
         </li>
 
         <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-            <div data-id="cpi" data-view="Graph" data-title="CPI" style="background-color:#0372FF" data-min="0" data-max="100"></div>
+            <div data-id="cpi" data-view="Graph" data-title="Consumer Price Index" style="background-color:#0372FF" data-min="0" data-max="100"></div>
         </li>
 
         <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
             <div data-id="valuation" data-view="Number" data-title="Current Valuation" style="background-color:#28a07a" data-moreinfo="In billions" data-prefix="$"></div>
         </li>
-
-        <li data-row="1" data-col="1" data-sizex="3" data-sizey="2">
-            <div data-id="mappie" data-view="Map" data-title="Map" data-type="heat" data-color="#A08C72"></div>
-        </li>
         
         <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-            <div data-id="plot" data-view="Plot" data-title="Plot" style="background-color:#048D61" data-moreinfo="a new idea"></div>
+            <div data-id="rickshawgraph" data-view="Rickshawgraph" data-title="Average Current Wage" unstack="true" style="background-color:#048D61" data-legend="true" data-renderer="area" data-moreinfo="Average Current Wage 1969-2010"></div>
         </li>
-        
-        <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-            <div data-id="foobar" data-view="Foobar" data-title="Foobar" style="background-color:#387d20"></div>
-        </li> 
+
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-id="rickshawgraph-line" data-view="Rickshawgraph" data-title="Per capita GDP by Year" data-legend="true" style="background-color:#74A59B" data-renderer="line" data-moreinfo="year"></div>
+        </li>
+
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-id="rickshawgraph" data-view="Rickshawgraph" data-title="Headcount Enrollment UH Manoa" data-legend="true" style="background-color:#B1C68F" data-renderer="bar" data-moreinfo="1997-2014"></div>
+        </li>
+
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-id="rickshawgraph" data-legend="true" data-view="Rickshawgraph" data-title="WTI Barrel of Oil Future Prices" style="background-color:#9C928F" data-renderer="scatterplot" data-moreinfo="WTI Barrel of Oil Future Prices"></div>
+        </li>
+
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-id="mappie" data-view="Map" data-title="Map" style="background-color:#A08C72"></div>
+        </li>      
 
     </ul>
     <center><!-- div style="font-size: 12px">Try this: curl -X PUT 'http://<%= request.host %>:<%= request.port %>/dashing/widgets/welcome' -d "widget[text]=Dashing is awesome"</div--></center>
