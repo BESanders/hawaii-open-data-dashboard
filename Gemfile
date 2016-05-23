@@ -28,6 +28,8 @@ gem 'puma'
 
 gem 'dashing-hotness'
 
+gem 'redis'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
