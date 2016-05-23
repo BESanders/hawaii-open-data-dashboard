@@ -78,15 +78,21 @@ data = [
   { "x" => 2014, "y" => 257.6 }
 ]
 
+pie_data = [
+  { label: "Hello world", value: 16},
+  { label: "Testing", value: 34 },
+]
+
 SCHEDULER = Dashing.scheduler
 
 Dashing.scheduler.every '2s' do
   last_valuation = current_valuation
-  current_valuation = rand(100)
+  current_valuation = rand(1000)
 
   Dashing.send_event('valuation', { current: current_valuation, last: last_valuation })
   Dashing.send_event('synergy',   { value: rand(100) })
   Dashing.send_event('cpi',   { value: rand(100) })
   Dashing.send_event('buzzwords', { value: "whatever"})
-  Dashing.send_event('cpi', {points: data, displayedValue: data.first["perc"]})
+  Dashing.send_event('cpi', {points: data})
+  Dashing.send_event('bookmarks_frequency', {value: pie_data})
 end

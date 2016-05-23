@@ -2,27 +2,34 @@
     E komo mai!  Public data dashboard for Hawaii
 <% end %>
 
+<script src="http://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS_KEY'] %>&sensor=false&libraries=visualization"></script>
+
 <div class="gridster">
     <ul>
         <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-            <div data-id="welcome" data-view="Text" data-title="E komo mai!" data-text="Hawaii dashboard." style="background-color:#0aa0df" data-moreinfo="You can drag the widgets around!"></div>
+            <div data-id="welcome" data-view="Text" data-title="E komo mai!" data-text="Hawaii dashboard." style="background-color:#0AA0DF" data-moreinfo="You can drag the widgets around!"></div>
         </li>
 
         <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-            <div data-id="cpi" data-view="Graph" data-title="CPI" style="background-color:#0372ff" data-min="0" data-max="100"></div>
-        </li>
-
-        <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
-            <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" style="background-color:#8cd890" data-moreinfo="# of times said around the office"></div>
+            <div data-id="cpi" data-view="Graph" data-title="CPI" style="background-color:#0372FF" data-min="0" data-max="100"></div>
         </li>
 
         <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-            <div data-id="valuation" data-view="Number" data-title="Current Valuation" style="background-color:#8cd890" data-moreinfo="In billions" data-prefix="$"></div>
+            <div data-id="valuation" data-view="Number" data-title="Current Valuation" style="background-color:#28a07a" data-moreinfo="In billions" data-prefix="$"></div>
         </li>
 
+        <li data-row="1" data-col="1" data-sizex="3" data-sizey="2">
+            <div data-id="mappie" data-view="Map" data-title="Map" data-type="heat" data-color="#A08C72"></div>
+        </li>
+        
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-id="plot" data-view="Plot" data-title="Plot" style="background-color:#048D61" data-moreinfo="a new idea"></div>
+        </li>
+        
         <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-            <div data-id="convergence" data-view="List" data-title="Convergence" style="background-color:#387d20"></div>
-        </li>
+            <div data-id="foobar" data-view="Foobar" data-title="Foobar" style="background-color:#387d20"></div>
+        </li> 
+
     </ul>
     <center><!-- div style="font-size: 12px">Try this: curl -X PUT 'http://<%= request.host %>:<%= request.port %>/dashing/widgets/welcome' -d "widget[text]=Dashing is awesome"</div--></center>
 </div>
