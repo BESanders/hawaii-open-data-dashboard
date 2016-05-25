@@ -165,5 +165,5 @@ end
 # Dashing.send_event('buzzwords', { value: "whatever"})
 # Dashing.send_event('cpi', {points: data})
 #Dashing.send_event('bookmarks_frequency', {value: pie_data})
-Dashing.send_event('rickshawgraph', {points: data})
+#Dashing.send_event('rickshawgraph', {points: data})
 #Dashing.send_event('rickshawgraph', {points: per_capita_gdp})
