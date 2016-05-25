@@ -39,7 +39,7 @@ test:
   encoding: unicode
   database: test-postgres_test
   pool: 5
-  username: test-postgres (or your username if PostgreSQL installed by Homebrew)
+  username: postgres (or your username if PostgreSQL installed by Homebrew)
   password:
 
 production:
@@ -47,5 +47,5 @@ production:
   encoding: unicode
   database: test-postgres_production
   pool: 5
-  username: test-postgres
+  username: postgres
   password:
