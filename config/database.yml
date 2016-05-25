@@ -11,16 +11,16 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: test-postgres_development
+  database: postgres
   pool: 5
-  username: test-postgres (or your username if PostgreSQL installed by Homebrew)
+  username: postgres
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  #host: localhost
-  #port: 5432
+  host: localhost
+  port: 5432
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -37,15 +37,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: test-postgres_test
+  database: postgres
   pool: 5
-  username: postgres (or your username if PostgreSQL installed by Homebrew)
+  username: postgres
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: test-postgres_production
+  database: postgres
   pool: 5
   username: postgres
   password:
