@@ -162,8 +162,8 @@ Dashing.scheduler.every '2s' do
   Dashing.send_event('synergy',   { value: rand(100) })
 end
 
-Dashing.send_event('buzzwords', { value: "whatever"})
-Dashing.send_event('cpi', {points: data})
-Dashing.send_event('bookmarks_frequency', {value: pie_data})
-Dashing.send_event('rickshawgraph', {points: points})
-Dashing.send_event('rickshawgraph-line', {points: per_capita_gdp})
+# Dashing.send_event('buzzwords', { value: "whatever"})
+# Dashing.send_event('cpi', {points: data})
+#Dashing.send_event('bookmarks_frequency', {value: pie_data})
+#Dashing.send_event('rickshawgraph', {points: data})
+#Dashing.send_event('rickshawgraph', {points: per_capita_gdp})

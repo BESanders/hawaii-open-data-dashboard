@@ -1,0 +1,139 @@
+/* line 8, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/map.scss */
+p {
+  color: #000;
+}
+
+/* line 12, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/map.scss */
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 17, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/map.scss */
+.widget-map {
+  background: #fff;
+  text-align: center;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 14, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph {
+  background-color: #dc5945;
+  position: relative;
+}
+/* line 19, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .rickshaw_graph {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+/* line 25, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph svg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+/* line 31, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .title, .widget-rickshawgraph .value {
+  position: relative;
+  z-index: 99;
+}
+/* line 36, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .title {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 40, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .more-info {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 0;
+}
+/* line 47, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .x_tick {
+  position: absolute;
+  bottom: 0;
+}
+/* line 50, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .x_tick .title {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 0.5;
+  padding-bottom: 3px;
+}
+/* line 58, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .y_ticks {
+  font-size: 20px;
+  fill: rgba(0, 0, 0, 0.4);
+}
+/* line 61, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .y_ticks text {
+  opacity: 0.5;
+}
+/* line 66, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .domain {
+  display: none;
+}
+/* line 70, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .rickshaw_legend {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  font-size: 15px;
+  height: 20px;
+}
+/* line 79, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .rickshaw_legend ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+/* line 86, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .rickshaw_legend ul li {
+  display: inline;
+}
+/* line 90, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .rickshaw_legend .swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+}
+/* line 97, /home/bes/research/rails/brian-dashboard/app/assets/stylesheets/dashing/widgets/rickshawgraph.scss */
+.widget-rickshawgraph .rickshaw_legend .label {
+  display: inline-block;
+  margin-left: 5px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+ */
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

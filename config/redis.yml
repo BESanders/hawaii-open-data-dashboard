@@ -1,0 +1,14 @@
+# Location: config/redis.yml
+development:
+#  url: redis://127.0.0.1:6379/1
+#url: redis://h:p1tqt88i6ckv6562vpdpa9lgb27@ec2-54-227-251-122.compute-1.amazonaws.com:12099
+url: redis:ec2-54-227-251-122.compute-1.amazonaws.com:12099
+test:
+#  url: redis://h:p1tqt88i6ckv6562vpdpa9lgb27@ec2-54-227-251-122.compute-1.amazonaws.com:12099
+url: redis:ec2-54-227-251-122.compute-1.amazonaws.com:12099
+production:
+#  url：redis://h:p1tqt88i6ckv6562vpdpa9lgb27@ec2-54-227-251-122.compute-1.amazonaws.com:12099
+url: redis:ec2-54-227-251-122.compute-1.amazonaws.com:1209
+  #  host: data.myapp.com
+#  port: 6333
+#  db: 0
