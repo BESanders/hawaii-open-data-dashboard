@@ -12,6 +12,6 @@ This is a dashing-rails demo application running on Heroku.
 
 Deployed to http://hawaii-opendata-dashboard.herokuapp.com/dashing/dashboards
 
-[(http://hawaii-opendata-dashboard.herokuapp.com/hawaii-opendata-screenshot.png)]
+[![](http://hawaii-opendata-dashboard.herokuapp.com/hawaii-opendata-screenshot.png)]
 
 
