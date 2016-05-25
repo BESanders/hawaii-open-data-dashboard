@@ -159,7 +159,13 @@ Dashing.scheduler.every '2s' do
   current_valuation = rand(1000)
 
   Dashing.send_event('valuation', { current: current_valuation, last: last_valuation })
-  Dashing.send_event('synergy',   { value: rand(100) })
+ => Booting Puma
+=> Rails 4.2.6 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+A server is already running. Check /home/bes/research/rails/brian-dashboard/tmp/pids/server.pid.
+Exiting
+ Dashing.send_event('synergy',   { value: rand(100) })
 end
 
 # Dashing.send_event('buzzwords', { value: "whatever"})
