@@ -8,8 +8,10 @@
 [![Dependency Status](https://gemnasium.com/gottfrois/dashing-rails.svg)](https://gemnasium.com/gottfrois/dashing-rails)
 [![codementor-button](https://www.codementor.io/d/images/badge-dark.png "Codementor")](https://www.codementor.io/gottfrois?utm_campaign=profile&utm_source=button-gottfrois&utm_medium=dark)
 
-This is a dashing-rails demo application runing on Heroku.
+This is a dashing-rails demo application running on Heroku.
 
 Deployed to http://hawaii-opendata-dashboard.herokuapp.com/dashing/dashboards
+
+[![](http://hawaii-opendata-dashboard.herokuapp.com/hawaii-opendata-screenshot.png)]
 
 
